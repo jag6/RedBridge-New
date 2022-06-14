@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="twitter:title" content="Contact Us">
+    <meta name="twitter:image" content="https://redbridgeco.com/Images/computer.jpg">
+    <meta property="og:image" content="https://redbridgeco.com/Images/computer.jpg">
+    <meta property="og:description" content="Contact us today for a free consultation and product quote!">
+    <meta property="og:title" content="Contact Us">
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://redbridgeco.com/contact"/>
+    <meta name="author" content="Matt Corriveau">
+    <meta name="description" content="Contact us today for a free consultation and product quote!">
+    <title>Contact - Red Bridge Co</title>
+    <script src="toggleMenu.js" type="text/javascript" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        window.onload = () => {
+            let recaptcha = document.forms["contact-form-pg"]["g-recaptcha-response"];
+            recaptcha.required = true;
+            recaptcha.oninvalid = () => {
+                // do something
+                alert("Please complete the captcha in order to send the form. Thank you!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/"><img src="Images/RedBridge Logo 1.png" alt="Red Bridge logo"></a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="services">SERVICES</a></li>
+            <li><a href="about">ABOUT</a></li>
+            <li><a href="contact">CONTACT</a></li>
+            <li><a href="blog">BLOG</a></li>
+            <li><a href="faq">FAQ</a></li>
+          </ul>
+        </nav>
+        <div class="header-images">
+            <a href="https://www.facebook.com/Red-Bridge-Co-103356892190448/?ref=pages_you_manage" aria-label="Facebook"><img src="Images/facebook.svg" alt="facebook logo"></a>
+            <a href="https://www.instagram.com/red_bridge_co/?hl=en" aria-label="Instagram"><img src="Images/instagram.svg" alt="instagram logo"></a>
+            <a href="https://www.linkedin.com/in/evhan-blasingame-28b460227/" aria-label="LinkedIn"><img src="Images/linkedin.svg" alt="linkedin logo"></a>
+        </div>
+        <div class="btn-toggle-nav" onclick="toggleNav()">
+            <img src="Images/hamburger-sidebar.svg" alt="hamburger icon">
+        </div>
+        <aside>
+            <nav class="nav-sidebar">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="services">SERVICES</a></li>
+                    <li><a href="about">ABOUT</a></li>
+                    <li><a href="contact">CONTACT</a></li>
+                    <li><a href="blog">BLOG</a></li>
+                    <li><a href="faq">FAQ</a></li> 
+                </ul>
+            </nav>
+        </aside>
+    </header>
+    <main>
+        <section class="banner">
+            <img id="cb-img" src="Images/computer.png" alt="computer">
+            <img id="cb-img2" src="Images/computer2.png" alt="computer">
+            <section class="banner-text" id="c-bt">
+                <h1>Let's<br>Connect</h1>
+            </section>
+        </section>
+        <section class="contact">
+            <section class="contact-header">
+                <section class="ch-header">
+                    <h1>LET’S GET STARTED</h1>
+                </section>
+                <div class="ch-img">
+                    <img src="Images/pencil.svg" alt="pencil">
+                </div>
+            </section>
+            <section class="contact-body">
+                <div class="contact-info">
+                    <div class="ci-1">
+                        <img id="phone" src="Images/phone.svg" alt="phone">
+                        <a href="tel:8057045505">805-704-5505</a>
+                    </div>
+                    <div class="ci-2">
+                        <img id="email" src="Images/email.png" alt="email">
+                        <a href="mailto:info@redbridgeco.com">info@redbridgeco.com</a>
+                    </div>
+                    <div class="s-media">
+                        <a href="https://www.facebook.com/Red-Bridge-Co-103356892190448/?ref=pages_you_manage" aria-label="Facebook"><img src="Images/facebook.svg" alt="facebook logo"></a>
+                        <a href="https://www.instagram.com/red_bridge_co/?hl=en" aria-label="Instagram"><img src="Images/instagram.svg" alt="instagram logo"></a>
+                        <a href="https://www.linkedin.com/in/evhan-blasingame-28b460227/" aria-label="LinkedIn"><img src="Images/linkedin.svg" alt="linkedin logo"></a>
+                    </div>
+                    <h2>Contact us today for a free consultation and product quote!</h2>
+                </div>
+                <div class="contact-form">
+                    <form action="thanks2.php" method="post" id="contact-form-pg"> 
+                        <label for="name">Name</label>
+                        <input type="text" name="name" placeholder="Joe Dohn" required maxlength="24"/>
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" placeholder="888-888-8888" required maxlength="12"/>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" size="20" maxLength="24" required
+                        placeholder="joe@apple.com" />
+                        <label for="message2" class="message">Message</label>
+                        <textarea name="message2" id="message2"></textarea>
+                        <div class="g-recaptcha" data-sitekey="6Lc6E0kgAAAAAHJieBxtxOGIEMIHnk4S0Igzjk1y"></div>
+                        <br/>
+                        <button name="submit" type="submit" id="send-form3" class="submit-btn">THANK YOU</button>
+                    </form> 
+                </div>
+            </section>   
+        </section>
+        <div class="top-button">
+            <button id="topBtn" onclick="topFunction()" title="Go to top">
+                <img src="Images/upBtn.svg" alt="up arrow">
+                <script src="topButton.js"></script>
+            </button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-left">
+          <div><img src="Images/RedBridge Submark 1.png" alt="Red Bridge logo 2"></div>
+          <p>Red Bridge Co&copy; 2022</p>
+          <div id="pp"><a href="privacy-policy">Privacy Policy</a></div>
+        </div>
+        <div id="pp2"><a href="privacy-policy">Privacy Policy</a></div>
+        <div class="footer-images">
+            <a href="https://www.facebook.com/Red-Bridge-Co-103356892190448/?ref=pages_you_manage" aria-label="Facebook"><img src="Images/facebook.svg" alt="facebook logo"></a>
+            <a href="https://www.instagram.com/red_bridge_co/?hl=en" aria-label="Instagram"><img src="Images/instagram.svg" alt="instagram logo"></a>
+            <a href="https://www.linkedin.com/in/evhan-blasingame-28b460227/" aria-label="LinkedIn"><img src="Images/linkedin.svg" alt="linkedin logo"></a>
+        </div>
+    </footer>
+</body>
+</html>
