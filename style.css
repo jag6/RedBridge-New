@@ -2156,6 +2156,15 @@ table tr:last-child td:last-child {
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
+.dr-small {
+    font-size: 42px;
+    line-height: 72px;
+}
+
+#rb-fix {
+    padding: 2rem 0rem;
+}
+
 .faq-card-header h2 {
     text-align: center;
 }
