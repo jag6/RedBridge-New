@@ -45,6 +45,25 @@ main {
     padding-bottom: 60px;
 }
 
+@media only screen and (min-width: 1441px) {
+    body {
+        background-color: #c5c5c5;
+    }
+
+    main {
+        max-width: 1441px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        position: relative;
+    }
+
+    #hp-bt {
+        top: 6rem;
+    }
+}
+
 h1 {
     font-weight: 700;
     font-size: 72px;
@@ -119,6 +138,10 @@ p {
     color: #CD071E;
 }
 
+.off-white {
+    background-color: #f3f3f3;
+}
+
 #g-recaptcha-response {
     display: block !important;
     position: absolute;
@@ -182,7 +205,30 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: #f3f3f3;
 }
+
+.header2 {
+    display: none;
+}
+
+@media only screen and (min-width: 1441px) {
+    .header1 {
+        display: none;
+    }
+    .header2 {
+        display: flex;
+        justify-content: center;
+        position: static;
+    }
+    .header-big {
+        min-width: 1440px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+} 
 
 .logo {
     height: 96px;
@@ -548,6 +594,12 @@ footer p {
     color: #fff;
 }
 
+@media only screen and (min-width: 1441px) {
+    #hp-bt {
+        top: 6rem;
+    }
+}
+
 #homepage-h1 {
     font-weight: 800;
     letter-spacing: 3px;
@@ -616,6 +668,7 @@ footer p {
     flex-direction: column;
     margin: 0 auto;
     padding: 3rem 0;
+    width: 100%;
     justify-content: center;
     align-items: center;
     background-color: #1B92CC;
@@ -678,6 +731,8 @@ table tr:last-child td:last-child {
     align-items: center;
     padding: 6rem 0;
     text-align: center;
+    background-color: #f3f3f3;
+    width: 100%;
 }
 
 .save h2 {
@@ -740,8 +795,8 @@ table tr:last-child td:last-child {
 }
 
 .mission {
-    padding: 7rem 0;
-    margin: 0 8%;
+    padding: 7rem 8%;
+    background-color: #f3f3f3;
 }
 
 .mission-body {
@@ -780,8 +835,9 @@ table tr:last-child td:last-child {
 }
 
 .advantage {
-    margin: 0 8%;
+    padding: 0 8%;
     padding-top: 3rem;
+    background-color: #f3f3f3;
 }
 
 .advantage-header, .contact-header {
@@ -861,6 +917,7 @@ table tr:last-child td:last-child {
 
 .process {
     padding: 7rem 0;
+    background-color: #f3f3f3;
 }
 
 .process-body {
@@ -907,9 +964,10 @@ table tr:last-child td:last-child {
 }
 
 .contact {
-    margin: 0 5%;
-    margin-top: 6rem;
-    margin-bottom: 3.5rem;
+    padding: 0 5%;
+    padding-top: 6rem;
+    padding-bottom: 3.5rem;
+    background-color: #f3f3f3;
 }
 
 .contact-header {
@@ -1100,7 +1158,7 @@ table tr:last-child td:last-child {
     }
 
     .mission {
-        margin: 0 3%;
+        padding: 7rem 3%;
     }
 
     .mission-text h2, .mission-text p {
@@ -1124,9 +1182,9 @@ table tr:last-child td:last-child {
     }
 
     .contact {
-        margin: 0 3%;
-        margin-top: 6rem;
-        margin-bottom: 3.5rem;
+        padding: 0 3%;
+        padding-top: 6rem;
+        padding-bottom: 3.5rem;
     }
 
     .ci-1 a, .ci-2 a {
@@ -1193,7 +1251,7 @@ table tr:last-child td:last-child {
     }
 
     .mission {
-        margin: 0 10%;
+        padding: 7rem 10%;
     }
 
     .mission-thirds {
@@ -1210,11 +1268,6 @@ table tr:last-child td:last-child {
     .mission-text h2, .mission-text p {
         font-size: 40px;
         line-height: 64px;
-    }
-
-    .advantage {
-        margin: 0 0;
-        padding-top: 3rem;
     }
 
     .advantage-header {
@@ -1273,9 +1326,9 @@ table tr:last-child td:last-child {
     }
 
     .contact {
-        margin: 0 0;
-        margin-top: 6rem;
-        margin-bottom: 3.5rem;
+        padding: 0 0%;
+        padding-top: 6rem;
+        padding-bottom: 3.5rem;
     }
 
     .contact-header {
@@ -1377,7 +1430,7 @@ table tr:last-child td:last-child {
     }
 
     .mission {
-        margin: 0 10%;
+        padding: 7rem 10%;
     }
 
     .mission-thirds {
@@ -1394,11 +1447,6 @@ table tr:last-child td:last-child {
     .mission-text h2, .mission-text p {
         font-size: 40px;
         line-height: 64px;
-    }
-
-    .advantage {
-        margin: 0 0;
-        padding-top: 3rem;
     }
 
     .advantage-header {
@@ -1464,9 +1512,9 @@ table tr:last-child td:last-child {
     }
 
     .contact {
-        margin: 0 0;
-        margin-top: 6rem;
-        margin-bottom: 3.5rem;
+        padding: 0 3%;
+        padding-top: 6rem;
+        padding-bottom: 3.5rem;
     }
 
     .contact-header {
@@ -1849,6 +1897,12 @@ table tr:last-child td:last-child {
     justify-content: center;
 }
 
+@media only screen and (min-width: 1441px) {
+    #th-bt {
+        top: 10rem;
+    }
+}
+
 .thankyou-text {
     margin: 7rem auto;
     display: flex;
@@ -1885,6 +1939,12 @@ table tr:last-child td:last-child {
 #s-bt {
     top: 15rem;
     padding-left: 20%;
+}
+
+@media only screen and (min-width: 1441px) {
+    #s-bt {
+        top: 10rem;
+    }
 }
 
 .services-block {
@@ -1994,6 +2054,12 @@ table tr:last-child td:last-child {
     padding-left: 40%;
 }
 
+@media only screen and (min-width: 1441px) {
+    #a-bt {
+        top: 6rem;
+    }
+}
+
 .about-text-top, .about-text-bottom {
     display: flex;
     margin: 0 auto;
@@ -2056,6 +2122,12 @@ table tr:last-child td:last-child {
     padding-right: 20%;
 }
 
+@media only screen and (min-width: 1441px) {
+    #b-bt {
+        top: 12rem;
+    }
+}
+
 @media only screen and (min-width: 0px) and (max-width: 991px) {   
     #b-bt {
         padding-right: 0%;
@@ -2077,6 +2149,12 @@ table tr:last-child td:last-child {
 
 #c-bt {
     top: 20rem;
+}
+
+@media only screen and (min-width: 1441px) {
+    #c-bt {
+        top: 13rem;
+    }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 577px) and (max-width: 991px) {
@@ -2111,6 +2189,14 @@ table tr:last-child td:last-child {
     padding-left: 45%;
 }
 
+@media only screen and (min-width: 1441px) {
+    #f-bt {
+        top: 8rem;
+        width: 80%;
+        padding-left: 45%;
+    }
+}
+
 .faq-top {
     background-color: #D9071F;
     color: #fff;
@@ -2128,8 +2214,8 @@ table tr:last-child td:last-child {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    margin-top: 2rem;
-    margin-bottom: 12rem;
+    padding-top: 2rem;
+    padding-bottom: 12rem;
     justify-content: space-around;
 }
 
@@ -2524,4 +2610,3 @@ table tr:last-child td:last-child {
       opacity: 1;
     }
   }
-
