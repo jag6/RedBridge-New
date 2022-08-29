@@ -19,6 +19,10 @@ if(isset($_POST['submit'])) {
     $email = $_POST['email'];
     $message = $_POST['message'];
 
+    if (!empty($_POST['choice'])){
+        $name = htmlspecialchars($_POST['choice']);
+    }
+
     if (!empty($_POST['name'])){
         $name = htmlspecialchars($_POST['name']);
     }
