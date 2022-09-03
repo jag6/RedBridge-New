@@ -6,41 +6,17 @@ sendProduct = document.getElementById("sendProduct")
         e.preventDefault();
         productOption = document.getElementById("product-options").value;
         localStorage.setItem("product", productOption);
-        document.getElementById("choice").innerHTML = localStorage.getItem("product");
+        document.getElementById("choice").textContent = localStorage.getItem("product");
         modal.style.display = "flex";
     }
 
-     closeModal.addEventListener('click', function(){
+    closeModal.addEventListener('click', () => {
         modal.style.display = "none";
     })
-
-
-     /*sendProduct.addEventListener('click', function(){
-        productOption = document.getElementById("product-options").value,
-        localStorage.setItem("product", productOption);
-        choice.innerHTML = localStorage.getItem("product");
-      })
-
-    sendProduct.addEventListener('click', function(){
-        modal.style.display = 'flex';
-    })
-
-    closeModal.addEventListener('click', function(){
-        modal.style.display = "none";
-    })
-
-    window.addEventListener('click', function(e) {
+     
+    /*window.addEventListener('click', (e) => {
         e.preventDefault();
         if(e.target == modal) {
             modal.style.display = 'none';
         }
     })*/
-
-       /*sendProduct.onclick = function() {sendProductFunction()}; 
-        function sendProductFunction() {
-            productOption = document.getElementById("product-options").value;
-            localStorage.setItem("product", productOption);
-            document.getElementById("choice") = localStorage.getItem("product");
-      }*/
-
-  
