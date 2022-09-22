@@ -1,4 +1,4 @@
-mybutton = document.getElementById("topBtn");
+const mybutton = document.getElementById("topBtn");
 
 const scrollFunction = () => {
   window.addEventListener('scroll', () => {
@@ -17,7 +17,6 @@ const topFunction = () => {
 
 document.getElementById("topBtn").addEventListener('mouseenter', () => {
   mybutton.style.opacity = ".8";
-  mybutton.style.transition = ".7s";
 })
 
 document.getElementById("topBtn").addEventListener('mouseleave', () => {
