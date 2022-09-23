@@ -204,29 +204,20 @@ header {
     height: 120px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #f3f3f3;
 }
 
-.header2 {
-    display: none;
+.header-inner {
+    width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-@media only screen and (min-width: 1441px) {
-    .header1 {
-        display: none;
-    }
-    .header2 {
-        display: flex;
-        justify-content: center;
-        position: static;
-    }
-    .header-big {
-        min-width: 1440px;
-        display: flex;
-        flex-direction: row;
+@media only screen and (min-width: 1500px) {
+    .header-inner {
         justify-content: space-between;
-        align-items: center;
     }
 } 
 
@@ -384,7 +375,10 @@ header {
 @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
     header {
         height: 64px;
-        justify-content: left;
+    }
+
+    .header-inner {
+        justify-content: space-between;
     }
 
     .logo {
@@ -417,7 +411,10 @@ header {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
     header {
         height: 64px;
-        justify-content: left;
+    }
+
+    .header-inner {
+        justify-content: space-between;
     }
 
     .logo {
@@ -458,6 +455,13 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.footer-inner {
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer-left {
@@ -506,6 +510,12 @@ footer p {
     margin-right: 8px;
 }
 
+@media only screen and (min-width: 1500px) {
+    .footer-inner {
+        justify-content: space-between;
+    }
+} 
+
 
 @media only screen and (min-width: 0px) and (max-width: 991px) { 
     .footer-left p, #pp {
@@ -529,7 +539,7 @@ footer p {
 }
 
 @media only screen and (min-width: 0px) and (max-width: 576px) {
-    footer {
+    .footer-inner {
         justify-content: space-around;
     }
 
@@ -729,10 +739,13 @@ table tr:last-child td:last-child {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    padding: 6rem 0;
+    padding: 6rem 5%;
     text-align: center;
     background-color: #f3f3f3;
-    width: 100%;
+}
+
+.save h1, .save h2 {
+    text-align: center;
 }
 
 .save h2 {
