@@ -64,13 +64,13 @@ main {
     }
 }
 
-h1 {
+h1, .how-save h2, .who h2, .mission h2, .process h2, .ch-header h2  {
     font-weight: 700;
     font-size: 72px;
     line-height: 96px;
 }
 
-h2 {
+h2, .mission h3, .advantage-text h3, .process-text h3 {
     font-weight: 700;
     font-size: 48px;
     line-height: 72px;
@@ -152,20 +152,24 @@ p {
     opacity: 0;
 }
 
+.how-save h2, .who h2, .mission h2, .process h2, .ch-header h2 {
+    text-align: center;
+}
+
 @media only screen and (min-width: 577px) and (max-width: 767px) {
-    h1 {
+    h1, .how-save h2, .who h2, .mission h2, .process h2, .ch-header h2  {
         font-size: 64px;
         line-height: 96px;
     }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 576px) {
-    h1 {
+    h1, .how-save h2, .who h2, .mission h2, .process h2, .ch-header h2  {
         font-size: 60px;
         line-height: 96px;
     }
 
-    h2 {
+    h2, .mission h3, .advantage-text h3, .process-text h3 {
         font-size: 40px;
         line-height: 72px;
     }
@@ -748,7 +752,12 @@ table tr:last-child td:last-child {
     background-color: #f3f3f3;
 }
 
-.save h1, .save h2 {
+.how-save {
+    font-size: 72px;
+    line-height: 96px;
+}
+
+.save h2 {
     text-align: center;
 }
 
@@ -775,8 +784,9 @@ table tr:last-child td:last-child {
     padding: 6.5rem 0;
 }
 
-.who h1 {
+.who h2 {
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .who-content {
@@ -842,7 +852,7 @@ table tr:last-child td:last-child {
     flex-direction: column;
 }
 
-.mission-text h2 {
+.mission-text h3 {
     text-decoration: underline;
 }
 
@@ -865,7 +875,7 @@ table tr:last-child td:last-child {
     justify-content: space-around;
 }
 
-.ah-header h1 {
+.ah-header h2 {
     font-size: 96px;
     line-height: 120px;
     text-align: center;
@@ -899,7 +909,7 @@ table tr:last-child td:last-child {
     flex-direction: column;
 }
 
-.advantage-text h2, .process-text h2 {
+.advantage-text h3, .process-text h3 {
     color: #CD071E;
 }
 
@@ -974,7 +984,7 @@ table tr:last-child td:last-child {
     padding: 10rem 8%;
 }
 
-.wait h1 {
+.wait h2 {
     text-align: center;
     font-size: 96px;
     line-height: 120px;
@@ -1178,18 +1188,18 @@ table tr:last-child td:last-child {
         padding: 7rem 3%;
     }
 
-    .mission-text h2, .mission-text p {
+   .mission-text p {
         font-size: 40px;
         line-height: 64px;
     }
 
-    .ah-header h1 {
+    .ah-header h2 {
         font-size: 80px;
         line-height: 104px;
         text-align: center;
     }
 
-    .advantage-text h2 {
+    .advantage-text h3 {
         width: 70%;
     }
    
@@ -1282,7 +1292,7 @@ table tr:last-child td:last-child {
         flex-direction: column;
     }
 
-    .mission-text h2, .mission-text p {
+    .mission-text p {
         font-size: 40px;
         line-height: 64px;
     }
@@ -1295,7 +1305,7 @@ table tr:last-child td:last-child {
         justify-content: center;
     }
 
-    .ah-header h1 {
+    .ah-header h2 {
         font-size: 80px;
         line-height: 104px;
         text-align: center;
@@ -1305,7 +1315,7 @@ table tr:last-child td:last-child {
         margin-top: 2rem;
     }
 
-    .advantage-text h2, .advantage-text p {
+    .advantage-text h3, .advantage-text p {
         width: 100%;
     }
 
@@ -1461,7 +1471,7 @@ table tr:last-child td:last-child {
         flex-direction: column;
     }
 
-    .mission-text h2, .mission-text p {
+    .mission-text p {
         font-size: 40px;
         line-height: 64px;
     }
@@ -1472,9 +1482,10 @@ table tr:last-child td:last-child {
         margin: 0 auto;
         align-items: center;
         justify-content: center;
+        padding: 0 2%;
     }
 
-    .ah-header h1 {
+    .ah-header h2 {
         font-size: 72px;
         line-height: 96px;
         text-align: center;
@@ -1484,7 +1495,7 @@ table tr:last-child td:last-child {
         margin-top: 2rem;
     }
 
-    .advantage-text h2, .advantage-text p {
+    .advantage-text h3, .advantage-text p {
         width: 100%;
     }
 
@@ -1522,7 +1533,7 @@ table tr:last-child td:last-child {
     }
 
     
-    .wait h1 {
+    .wait h2 {
         text-align: center;
         font-size: 72px;
         line-height: 96px;
@@ -1658,7 +1669,7 @@ table tr:last-child td:last-child {
         margin-bottom: 5rem;
     }
 
-    .ah-header h1 {
+    .ah-header h2 {
         font-size: 60px;
         line-height: 96px;
         text-align: center;
@@ -2323,7 +2334,7 @@ table tr:last-child td:last-child {
     padding-top: 7rem;
 }
 
-#light-gray h2, #fq-middle h1, #fq-middle p {
+#light-gray h3, #fq-middle p {
     color: #CD071E;
 }
 
@@ -2336,7 +2347,7 @@ table tr:last-child td:last-child {
     font-weight: 700;
 }
 
-.faq-questions-body h1 {
+.faq-questions-body h2 {
     font-size: 96px;
     font-weight: 700;
     line-height: 120px;
@@ -2354,8 +2365,11 @@ table tr:last-child td:last-child {
     margin-bottom: 6rem;
 }
 
-.faq-questions h2 {
+.faq-questions h3 {
+    font-size: 48px;
+    line-height: 72px;
     margin-bottom: 2rem;
+    font-weight: 700;
 }
 
 .faq-questions p {
@@ -2437,11 +2451,16 @@ table tr:last-child td:last-child {
         margin-bottom: 1rem;
     }
 
-    .faq-questions-body h1 {
+    .faq-questions-body h2 {
         font-size: 72px;
         font-weight: 700;
         line-height: 96px;
         margin-bottom: 7rem;
+    }
+
+    .faq-questions-body h3 {
+        font-size: 40px;
+        line-height: 72px;
     }
     
     .faq-questions-body {
