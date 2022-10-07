@@ -1,30 +1,26 @@
-const mybutton = document.getElementById("topBtn");
+const topBtn = document.getElementById('topBtn');
 
-const scrollFunction = () => {
-  window.addEventListener('scroll', () => {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      topBtn.style.display = "block";
-    }else {
-      topBtn.style.display = "none";
-    }
-  });
-}
+window.addEventListener('scroll', () => {
+	if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+		topBtn.style.display = "block";
+	}else {
+		topBtn.style.display = "none";
+	}
+});
 
-const topFunction = () => {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+topBtn.addEventListener('click', () => {
+	document.body.scrollTop = 0; // For Safari
+	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+});
 
-document.getElementById("topBtn").addEventListener('mouseenter', () => {
-  mybutton.style.opacity = ".8";
-})
+topBtn.addEventListener('mouseenter', () => {
+	topBtn.style.opacity = ".8";
+});
 
-document.getElementById("topBtn").addEventListener('mouseleave', () => {
-  mybutton.style.opacity = "1";
-})
+topBtn.addEventListener('mouseleave', () => {
+	topBtn.style.opacity = "1";
+});
 
-document.getElementById("topBtn").addEventListener('click', () => {
-  mybutton.style.opacity = "1";
-})
-
-topFunction(), scrollFunction();
+topBtn.addEventListener('click', () => {
+	topBtn.style.opacity = "1";
+});

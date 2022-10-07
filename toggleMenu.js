@@ -1,11 +1,9 @@
-
-
 let toggleNavStatus = false;
 let getSidebar = document.querySelector(".nav-sidebar");
 let getSidebarUl = document.querySelector(".nav-sidebar ul");
 let getSidebarA = document.querySelectorAll(".nav-sidebar a");
 
-const toggleNav = () => {
+document.getElementById('toggle-nav').addEventListener('click', () => {
     if (toggleNavStatus === false) {
         getSidebar.style.visibility = "visible";
         getSidebarUl.style.visibility = "visible";
@@ -24,5 +22,5 @@ const toggleNav = () => {
         }
         toggleNavStatus = false;
     }
-}
+});
 let toggleNavStatusOther = false;

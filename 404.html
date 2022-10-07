@@ -24,6 +24,7 @@
     <meta name="description" content="Sorry, the page you’re looking for doesn’t exist!">
     <title>404 Page Not Found - Red Bridge Co.</title>
     <script src="toggleMenu.js" type="text/javascript" defer></script>
+    <script src="topButton.js" type="text/javascript" defer></script>
 </head>
 <body>
     <header>
@@ -47,7 +48,7 @@
                 <a href="https://www.linkedin.com/in/evhan-blasingame-28b460227/" aria-label="LinkedIn"><img src="Images/linkedin.svg" alt="linkedin logo"></a>
             </div>
         </div>
-        <div class="btn-toggle-nav" onclick="toggleNav()">
+        <div class="btn-toggle-nav" id="toggle-nav">
             <img src="Images/hamburger-sidebar.svg" alt="hamburger icon">
         </div>
         <aside>
@@ -75,9 +76,8 @@
             <p>Thank you!</p>
         </div>
         <div class="top-button">
-            <button id="topBtn" onclick="topFunction()" title="Go to top">
+            <button id="topBtn" title="Go to top">
                 <img src="Images/upBtn.svg" alt="up arrow">
-                <script src="topButton.js"></script>
             </button>
         </div>
     </main>

@@ -16,7 +16,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no" />
     <meta name="twitter:title" content="FAQ">
+    <meta property="twitter:description" content="Here you'll find more information regarding buying from China, Red Bridge Co., and your order.">
     <meta name="twitter:image" content="https://redbridgeco.com/Images/containers.jpg">
+    <meta name="twitter:card" content="summary_large_image">
     <meta property="og:image" content="https://redbridgeco.com/Images/containers.jpg">
     <meta property="og:description" content="Here you'll find more information regarding buying from China, Red Bridge Co., and your order.">
     <meta property="og:title" content="FAQ">
@@ -28,6 +30,7 @@
     <title>FAQ - Red Bridge Co.</title>
     <script src="toggleMenu.js" type="text/javascript" defer></script>
     <script src="animation.js" type="text/javascript" defer></script>
+    <script src="topButton.js" type="text/javascript" defer></script>
 </head>
 <body>
     <header>
@@ -51,7 +54,7 @@
                 <a href="https://www.linkedin.com/in/evhan-blasingame-28b460227/" aria-label="LinkedIn"><img src="Images/linkedin.svg" alt="linkedin logo"></a>
             </div>
         </div>
-        <div class="btn-toggle-nav" onclick="toggleNav()">
+        <div class="btn-toggle-nav" id="toggle-nav">
             <img src="Images/hamburger-sidebar.svg" alt="hamburger icon">
         </div>
         <aside>
@@ -201,9 +204,8 @@
             </section>
         </section>
         <div class="top-button">
-            <button id="topBtn" onclick="topFunction()" title="Go to top">
+            <button id="topBtn" title="Go to top">
                 <img src="Images/upBtn.svg" alt="up arrow">
-                <script src="topButton.js"></script>
             </button>
         </div>
     </main>
