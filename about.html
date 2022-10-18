@@ -1,74 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS and Fonts -->
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://redbridgeco.com/about">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <!-- Metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="Learn more about who's behind Red Bridge Co.">
+    <!-- Twitter Metadata -->
     <meta name="twitter:title" content="About Us">
     <meta property="twitter:description" content="Learn more about who's behind Red Bridge Co.">
     <meta name="twitter:image" content="https://redbridgeco.com/Images/surfer.jpg">
     <meta name="twitter:card" content="summary_large_image">
+    <!-- Other Social Media Metadata-->
     <meta property="og:image" content="https://redbridgeco.com/Images/surfer.jpg">
     <meta property="og:description" content="Learn more about who's behind Red Bridge Co.">
     <meta property="og:title" content="About Us">
     <meta property="og:locale" content="en_US"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://redbridgeco.com/about"/>
-    <meta name="author" content="Matt Corriveau">
-    <meta name="description" content="Learn more about who's behind Red Bridge Co.">
+    <!-- Title -->
     <title>About - Red Bridge Co.</title>
-    <script src="toggleMenu.js" type="text/javascript" defer></script>
-    <script src="topButton.js" type="text/javascript" defer></script>
+    <!-- Scripts -->
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
 </head>
 <body>
-    <header>
-        <div class="header-inner">
-            <div class="logo">
-                <a href="/"><img src="Images/RedBridge co. Logo.png" alt="Red Bridge Co. logo"></a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="services">SERVICES</a></li>
-                    <li><a href="about">ABOUT</a></li>
-                    <li><a href="contact">CONTACT</a></li>
-                    <li><a href="blog">BLOG</a></li>
-                    <li><a href="faq">FAQ</a></li>
-                </ul>
-            </nav>
-            <div class="header-images">
-                <a href="https://www.facebook.com/Red-Bridge-Co-103356892190448/?ref=pages_you_manage" aria-label="Facebook"><img src="Images/facebook.svg" alt="facebook logo"></a>
-                <a href="https://www.instagram.com/red_bridge_co/?hl=en" aria-label="Instagram"><img src="Images/instagram.svg" alt="instagram logo"></a>
-                <a href="https://www.linkedin.com/in/evhan-blasingame-28b460227/" aria-label="LinkedIn"><img src="Images/linkedin.svg" alt="linkedin logo"></a>
-            </div>
-        </div>
-        <div class="btn-toggle-nav" id="toggle-nav">
-            <img src="Images/hamburger-sidebar.svg" alt="hamburger icon">
-        </div>
-        <aside>
-            <nav class="nav-sidebar">
-                <ul>
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="services">SERVICES</a></li>
-                    <li><a href="about">ABOUT</a></li>
-                    <li><a href="contact">CONTACT</a></li>
-                    <li><a href="blog">BLOG</a></li>
-                    <li><a href="faq">FAQ</a></li> 
-                </ul>
-            </nav>
-        </aside>
-    </header>
+    <header-component></header-component>
     <main>
         <section class="banner">
             <img src="Images/surfer.png" alt="surfer">
@@ -82,26 +51,7 @@
         <div class="about-text-bottom">
             <p>Connect with us and we’ll show you just how successful you can be sourcing from China!</p>
         </div>
-        <div class="top-button">
-            <button id="topBtn" title="Go to top">
-                <img src="Images/upBtn.svg" alt="up arrow">
-            </button>
-        </div>
     </main>
-    <footer>
-        <div class="footer-inner">
-            <div class="footer-left">
-                <div><img src="Images/RedBridge Submark 1.png" alt="Red Bridge Co. logo 2"></div>
-                <p>Red Bridge Co.&copy; 2022</p>
-                <div id="pp"><a href="privacy-policy">Privacy Policy</a></div>
-              </div>
-              <div id="pp2"><a href="privacy-policy">Privacy Policy</a></div>
-              <div class="footer-images">
-                  <a href="https://www.facebook.com/Red-Bridge-Co-103356892190448/?ref=pages_you_manage" aria-label="Facebook"><img src="Images/facebook.svg" alt="facebook logo"></a>
-                  <a href="https://www.instagram.com/red_bridge_co/?hl=en" aria-label="Instagram"><img src="Images/instagram.svg" alt="instagram logo"></a>
-                  <a href="https://www.linkedin.com/in/evhan-blasingame-28b460227/" aria-label="LinkedIn"><img src="Images/linkedin.svg" alt="linkedin logo"></a>
-              </div>
-        </div>
-    </footer>
+    <footer-component></footer-component>
 </body>
 </html>
