@@ -205,7 +205,7 @@ lightest-gray = #
 
 header {
     font-family: 'Montserrat', sans-serif;
-    height: 120px;
+    height: 104px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -215,7 +215,8 @@ header {
 .header-inner {
     width: 1440px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 3%;
     align-items: center;
 }
 
@@ -226,15 +227,15 @@ header {
 } 
 
 .logo {
-    height: 96px;
-    width: 124px;
+    height: 80px;
+    width: auto;
     display: flex;
     align-items: center;
 }
 
 .logo img {
-    height: 96px;
-    width: 132px;
+    height: 80px;
+    width: auto;
 }
 
 #nav {
@@ -278,8 +279,8 @@ header {
 }
 
 .header-images img {
-    height: 48px;
-    width: 48px;
+    height: 24px;
+    width: auto;
     padding-right: 15px;
 }
 
@@ -346,37 +347,9 @@ header {
     #nav ul li {
         padding-right: 30px;
     }
-
-    .header-images img {
-        height: 32px;
-        width: 32px;
-        padding-right: 10px;
-    }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {   
-    .logo img {
-        height: 74px;
-        width: 96px;
-    }
-
-    #nav ul li {
-        padding-right: 20px;
-    }
-
-    .header-images img {
-        padding-right: 8px;
-        height: 32px;
-        width: 32px;
-    }
-
-    #nav ul li a {
-        font-size: 16px;
-        line-height: 32px;
-    }
-}
-
-@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (max-width: 991px) {
     header {
         height: 64px;
     }
@@ -386,16 +359,16 @@ header {
     }
 
     .logo {
-        height: 64px;
-        width: 88px;
+        height: 48px;
+        width: auto;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .logo img {
-        height: 56px;
-        width: 72px;
+        height: 48px;
+        width: auto;
     }
 
     #nav {
@@ -411,41 +384,6 @@ header {
     }
 }
 
-
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-    header {
-        height: 64px;
-    }
-
-    .header-inner {
-        justify-content: space-between;
-    }
-
-    .logo {
-        height: 64px;
-        width: 88px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .logo img {
-        height: 56px;
-        width: 72px;
-    }
-
-    #nav {
-        display: none;
-    }
-
-    .header-images img {
-        display: none;
-    }
-
-    .btn-toggle-nav, aside {
-        display: flex;
-    }
-}
 
 /*FOOTER*/
 
