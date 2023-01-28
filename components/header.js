@@ -4,7 +4,7 @@ class Header extends HTMLElement {
             <header>
                 <div class="header-inner">
                     <div class="logo">
-                        <a href="/"><img src="Images/RedBridgeco-logo.svg" alt="Red Bridge Co. logo"></a>
+                        <a href="/"><img src="Images/RedBridge co. Logo.png" alt="Red Bridge Co. logo"></a>
                     </div>
                     <nav id="nav">
                         <ul>
