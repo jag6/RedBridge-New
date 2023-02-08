@@ -971,6 +971,12 @@ table tr:last-child td:last-child {
         padding-top: 4rem;
     }
 
+    #product-options {
+        padding: .5rem;
+        margin-left: 0;
+        width: 95%;
+    }
+
     .want-to-buy {
         background: none;
         height: auto;
@@ -986,7 +992,6 @@ table tr:last-child td:last-child {
     .want-to-buy form button {
         font-size: 24px;
         line-height: 48px;
-    
         margin-top: 1rem;
         border-radius: 0;
     }
@@ -996,7 +1001,7 @@ table tr:last-child td:last-child {
     }
 
     .want-to-buy button {
-        width: 80%;
+        width: 95%;
     }
 
     .table {

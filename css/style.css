@@ -231,6 +231,16 @@ lightest-gray = #
     }
 }
 
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+    #hpb-img {
+        filter: blur(3px);
+    }
+    
+    .banner-text {
+        height: 672px;
+    }
+}
+
 
 /*ANIMATIONS*/
 .js-scroll {
