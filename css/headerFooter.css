@@ -1,0 +1,293 @@
+/*HEADER*/
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    height: 104px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+}
+
+.header-inner {
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3%;
+    align-items: center;
+}
+
+@media only screen and (min-width: 1441px) {
+    .header-inner {
+        padding: 0;
+    }
+} 
+
+.logo {
+    height: 80px;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+}
+
+#nav {
+    display: flex;
+}
+
+#nav ul {
+    list-style: none;
+    display: flex;
+}
+
+#nav ul li {
+    padding-right: 40px;
+}
+
+#nav ul li:last-child {
+    padding-right: 0px;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: #CD071E;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+#nav ul li:hover {
+    transform: scale(1.1);
+    transition: .2s ease;
+}
+
+#nav ul li a:hover {
+    border-bottom: solid 4px #CD071E;
+    transition: .2s ease;
+}
+
+.header-images {
+    display: flex;
+}
+
+.header-images img {
+    height: 24px;
+    width: auto;
+    padding-right: 15px;
+}
+
+.header-images img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+}
+
+.btn-toggle-nav, aside {
+    display: none;
+}
+
+.btn-toggle-nav {
+    margin: 0 auto;
+    right: 0;
+    cursor: pointer;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+}
+
+.btn-toggle-nav img {
+    width: 64px;
+    height: 64px;
+}
+
+.nav-sidebar {
+    right: 0;
+    top: 64px;
+    width: 200px;
+    height: auto;
+    z-index: 1000;
+    background-color: #D9071F;
+    position: absolute;
+    visibility: hidden;
+    transition: all .8s ease-in-out;
+}
+
+.nav-sidebar ul {
+    overflow: hidden;
+}
+
+.nav-sidebar ul li {
+    list-style: none;
+}
+
+.nav-sidebar ul li a {
+    display: block;
+    height: 64px;
+    padding: 0 25px;
+    color: #fff;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all .8s ease-in-out;
+    font-size: 21px;
+    line-height: 64px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #nav ul li {
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    header {
+        height: 64px;
+    }
+
+    .header-inner {
+        justify-content: space-between;
+    }
+
+    .logo {
+        height: 48px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 48px;
+        width: auto;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    .header-images img {
+        display: none;
+    }
+
+    .btn-toggle-nav, aside {
+        display: flex;
+    }
+}
+
+
+/*FOOTER*/
+
+footer {
+    position: absolute;
+	bottom: 0;
+	max-width: 1440px;
+    height: 60px;
+    background-color: #888;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 3%;
+}
+
+.footer-left img {
+    width: 50px;
+    height: 36px;
+    margin-right: 8px;
+}
+
+footer p {
+    font-size: 24px;
+    line-height: 32px;
+    margin-right: 50px;
+}
+
+#pp {
+    margin-right: 50px;
+}
+
+#pp a, #pp2 a {
+    font-size: 18px;
+    line-height: 32px;
+    text-decoration: none;
+    color: #000;
+}
+
+#pp2 {
+    display: none;
+}
+
+.footer-images {
+    display: flex;
+    align-items: center;
+    margin-right: 3%;
+}
+
+.footer-images img {
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 991px) { 
+    .footer-left p, #pp {
+        margin-right: 0%;
+    }
+
+    #pp {
+        display: none;
+    }
+
+    #pp2 {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+    footer p {
+        font-size: 21px;
+        line-height: 32px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+    .footer-left img {
+        width: 42px;
+        height: 29px;
+    }
+
+    #pp2 {
+        margin-right: 3%;
+    }
+
+    footer p {
+        font-size: 16px;
+        line-height: 32px;
+        margin-right: 0px;
+    }
+
+    #pp2 a {
+        font-size: 14px;
+        line-height: 32px;
+    }
+
+    .footer-images {
+        display: none;
+    }
+}

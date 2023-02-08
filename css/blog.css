@@ -1,0 +1,24 @@
+/*BLOG*/
+
+#b-bt {
+    top: 18rem;
+    padding-right: 20%;
+}
+
+@media only screen and (min-width: 1441px) {
+    #b-bt {
+        top: 12rem;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 991px) {   
+    #b-bt {
+        padding-right: 0%;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+    #b-bt {
+        top: 10rem;   
+    }
+}
