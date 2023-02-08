@@ -225,6 +225,12 @@ lightest-gray = #
     color: #CD071E;
 }
 
+@media only screen and (max-width: 1199px) {
+    .banner img {
+        object-fit: cover;
+    }
+}
+
 
 /*ANIMATIONS*/
 .js-scroll {
