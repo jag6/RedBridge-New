@@ -4,16 +4,16 @@ class Header extends HTMLElement {
             <header>
                 <div class="header-inner">
                     <div class="logo">
-                        <a href="/"><img src="Images/RedBridge co. Logo.png" alt="Red Bridge Co. logo"></a>
+                        <a href="/"><img src="/Images/RedBridge co. Logo.png" alt="Red Bridge Co. logo"></a>
                     </div>
                     <nav id="nav">
                         <ul>
                             <li><a href="/">HOME</a></li>
-                            <li><a href="services">SERVICES</a></li>
-                            <li><a href="about">ABOUT</a></li>
-                            <li><a href="contact">CONTACT</a></li>
-                            <li><a href="blog">BLOG</a></li>
-                            <li><a href="faq">FAQ</a></li>
+                            <li><a href="/services">SERVICES</a></li>
+                            <li><a href="/about">ABOUT</a></li>
+                            <li><a href="/contact">CONTACT</a></li>
+                            <li><a href="/blog">BLOG</a></li>
+                            <li><a href="/faq">FAQ</a></li>
                         </ul>
                     </nav>
                     <div class="header-images">
@@ -23,17 +23,17 @@ class Header extends HTMLElement {
                     </div>
                 </div>
                 <div class="btn-toggle-nav" id="toggle-nav">
-                    <img src="Images/hamburger-sidebar.svg" alt="hamburger icon">
+                    <img src="/Images/hamburger-sidebar.svg" alt="hamburger icon">
                 </div>
                 <aside>
                     <nav class="nav-sidebar">
                         <ul>
                             <li><a href="/">HOME</a></li>
-                            <li><a href="services">SERVICES</a></li>
-                            <li><a href="about">ABOUT</a></li>
-                            <li><a href="contact">CONTACT</a></li>
-                            <li><a href="blog">BLOG</a></li>
-                            <li><a href="faq">FAQ</a></li> 
+                            <li><a href="/services">SERVICES</a></li>
+                            <li><a href="/about">ABOUT</a></li>
+                            <li><a href="/contact">CONTACT</a></li>
+                            <li><a href="/blog">BLOG</a></li>
+                            <li><a href="/faq">FAQ</a></li> 
                         </ul>
                     </nav>
                 </aside>

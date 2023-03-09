@@ -42,7 +42,7 @@ body {
 }
 
 main {
-    padding-bottom: 60px;
+    padding-bottom: 56px;
 }
 
 @media only screen and (min-width: 1441px) {
@@ -142,6 +142,7 @@ p {
     background-color: #f3f3f3;
 }
 
+/*
 #g-recaptcha-response {
     display: block !important;
     position: absolute;
@@ -150,7 +151,7 @@ p {
     height: 76px !important;
     z-index: -999999;
     opacity: 0;
-}
+}*/
 
 .how-save h2, .who h2, .mission h2, .process h2, .ch-header h2 {
     text-align: center;

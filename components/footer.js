@@ -9,10 +9,9 @@ class Footer extends HTMLElement {
             <footer>
                 <div class="footer-left">
                     <div><img src="Images/RedBridge Submark 1.png" alt="Red Bridge Co. logo 2"></div>
-                    <p>Red Bridge Co.&copy; 2022</p>
-                    <div id="pp"><a href="privacy-policy">Privacy Policy</a></div>
+                    <p>Red Bridge Co.&copy; 2022-2023</p>
                 </div>
-                <div id="pp2"><a href="privacy-policy">Privacy Policy</a></div>
+                <div class="pp"><a href="/privacy-policy">Privacy Policy</a></div>
                 <div class="footer-images">
                     <a href="https://www.facebook.com/Red-Bridge-Co-103356892190448/?ref=pages_you_manage" aria-label="Facebook"><img src="Images/facebook.svg" alt="facebook logo"></a>
                     <a href="https://www.instagram.com/red_bridge_co/?hl=en" aria-label="Instagram"><img src="Images/instagram.svg" alt="instagram logo"></a>
@@ -39,15 +38,12 @@ class Footer extends HTMLElement {
                 document.body.scrollTop = 0; // For Safari
                 document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
             });
-    
             topBtn.addEventListener('mouseenter', () => {
                 topBtn.style.opacity = ".8";
             });
-    
             topBtn.addEventListener('mouseleave', () => {
                 topBtn.style.opacity = "1";
             });
-    
             topBtn.addEventListener('click', () => {
                 topBtn.style.opacity = "1";
             });
