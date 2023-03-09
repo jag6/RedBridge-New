@@ -171,7 +171,7 @@
     height: 1rem;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (max-width: 1199px) {
     #f-bt {
         width: 90%;
         padding-left: 40%;
@@ -182,7 +182,7 @@
    }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 991px) {   
+@media only screen and (max-width: 991px) {   
     #f-bt {
         width: 90%;
         padding-left: 29.5%;
@@ -203,7 +203,7 @@
     }
 }
 
-@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (orientation: landscape) and (max-width: 991px) {
     #f-bt {
         top: 8rem;
         width: 90%;
@@ -212,7 +212,7 @@
 }
 
 
-@media only screen and (min-width: 577px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     #f-bt {
         top: 8rem;
         width: 90%;
@@ -220,7 +220,7 @@
     }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
     #f-bt {
         top: 8rem;
         width: 100%;

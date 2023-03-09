@@ -58,14 +58,14 @@
 }
 
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (max-width: 1199px) {
     .services-img img {
         width: 80%;
         height: 80%;
     }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 991px) {   
+@media only screen and (max-width: 991px) {   
     .services-block, #services section:nth-child(3), #services section:nth-child(5) {
         flex-direction: column;
    }
@@ -85,14 +85,14 @@
     }
 }
 
-@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (orientation: landscape) and (max-width: 991px) {
     #s-bt {
         top: 10rem;
         padding-left: 2%;
     }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
     #s-bt {
         top: 8rem;
         padding-left: 0%;

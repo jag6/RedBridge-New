@@ -553,7 +553,7 @@ table tr:last-child td:last-child {
     display: none;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (max-width: 1199px) {
      #homepage-h2-1 {
         font-size: 48px;
         line-height: 96px;
@@ -620,13 +620,13 @@ table tr:last-child td:last-child {
     }
 }
 
-@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (orientation: landscape) and (max-width: 991px) {
     #hp-bt {
         top: 10rem;
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {   
+@media only screen and (max-width: 991px) {   
     #homepage-h2-1 {
         font-size: 40px;
         line-height: 96px;
@@ -776,7 +776,7 @@ table tr:last-child td:last-child {
     }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     #homepage-h2-1 {
         font-size: 32px;
         line-height: 72px;
@@ -955,7 +955,7 @@ table tr:last-child td:last-child {
     }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
     #hpb-img {
         filter: blur(3px);
     }
@@ -1254,13 +1254,13 @@ table tr:last-child td:last-child {
 
 
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (max-width: 1199px) {
     #questions-form {
         width: 70%;
     }
 }
 
-@media only screen and (min-width: 577px) and (max-width: 991px) {   
+@media only screen and (max-width: 991px) {   
     .close-modal {
         margin: -5% 0 0 1%;
     }
@@ -1270,7 +1270,7 @@ table tr:last-child td:last-child {
     }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
     .close-modal {
         margin: -8% 0 0 1%;
     }
@@ -1316,14 +1316,14 @@ table tr:last-child td:last-child {
     }
 }
 
-@media only screen and (orientation: landscape) and (min-width: 577px) and (max-width: 991px) {
+@media only screen and (orientation: landscape) and (max-width: 991px) {
     #c-bt {
         top: 17rem;
     }
 }
 
 
-@media only screen and (min-width: 0px) and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
     #cb-img {
         display: none;
     }

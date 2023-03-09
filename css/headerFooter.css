@@ -140,7 +140,7 @@ header {
     letter-spacing: 2px;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (max-width: 1199px) {
     #nav ul li {
         padding-right: 30px;
     }
@@ -235,7 +235,7 @@ footer p {
     margin-right: 8px;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
     footer {
         height: 88px;
         padding: .5rem 3%;

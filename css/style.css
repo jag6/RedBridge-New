@@ -64,6 +64,12 @@ main {
     }
 }
 
+@media only screen and (max-width: 576px) {
+    main {
+        padding-bottom: 88px;
+    }
+}
+
 h1, .how-save h2, .who h2, .mission h2, .process h2, .ch-header h2  {
     font-weight: 700;
     font-size: 72px;
