@@ -70,7 +70,7 @@ main {
     }
 }
 
-h1, .how-save h2, .who h2, .mission h2, .process h2, .ch-header h2  {
+h1, .how-save, .who h2, .mission h2, .process h2, .ch-header h2  {
     font-weight: 700;
     font-size: 72px;
     line-height: 96px;
@@ -159,19 +159,13 @@ p {
     opacity: 0;
 }*/
 
-.how-save h2, .who h2, .mission h2, .process h2, .ch-header h2 {
+.how-save, .who h2, .mission h2, .process h2, .ch-header h2 {
     text-align: center;
 }
 
-@media only screen and (min-width: 577px) and (max-width: 767px) {
-    h1, .how-save h2, .who h2, .mission h2, .process h2, .ch-header h2  {
-        font-size: 64px;
-        line-height: 96px;
-    }
-}
 
-@media only screen and (min-width: 0px) and (max-width: 576px) {
-    h1, .how-save h2, .who h2, .mission h2, .process h2, .ch-header h2  {
+@media only screen and (max-width: 767px) {
+    h1, .how-save, .who h2, .mission h2, .process h2, .ch-header h2  {
         font-size: 60px;
         line-height: 96px;
     }
@@ -238,7 +232,7 @@ lightest-gray = #
     }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
     #hpb-img {
         filter: blur(3px);
     }

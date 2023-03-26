@@ -52,6 +52,18 @@
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .about-text-top p {
+        font-size: 24px;
+        line-height: 48px;
+    }
+
+    .about-text-bottom p {
+        font-size: 32px;
+        line-height: 64px;
+    }
+}
+
 @media only screen and (max-width: 576px) {
     #a-bt {
         top: 8rem;   
