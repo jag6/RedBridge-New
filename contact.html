@@ -36,13 +36,12 @@
     <meta property="og:locale" content="en_US"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://redbridgeco.com/contact"/>
-    <!-- CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src https://fonts.gstatic.com; style-src 'self' https://fonts.googleapis.com; script-src 'self'; frame-src 'self'; child-src 'none';" />
     <!-- Title -->
     <title>Contact - Red Bridge Co.</title>
     <!-- Scripts -->
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="scripts/token.js" type="text/javascript" defer></script>
 </head>
 <body>
     <header-component></header-component>
@@ -91,6 +90,7 @@
                         placeholder="joe@apple.com" />
                         <label for="message2" class="message">Message</label>
                         <textarea name="message2" id="message2"></textarea>
+                        <input class="token" type="hidden" name="token" value="">
                         <button name="submit" type="submit" id="send-form3" class="submit-btn">THANK YOU</button>
                     </form> 
                 </div>

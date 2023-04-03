@@ -1,26 +1,34 @@
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteCond %{HTTP_HOST} ^(www\.)?redbridgeco\.com$ [NC]
-RewriteRule ^(.*)$ https://redbridgeco.com/$1 [L,R=301]
+    # Set HSTS env var only if HTTPS
+    RewriteCond %{HTTPS} on
+    RewriteRule ^ - [E=HSTS:1]
 
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/ 
-RewriteRule ^index\.html$ http://%{HTTP_HOST}/ [R=301,L]
+    # Redirect HTTP to HTTPS on the same host
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*)$ $1.html
+    # Redirect www to non-www (and HTTPS)
+    RewriteCond %{HTTP_HOST} ^www\.(.+?)\.?$ [NC]
+    RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
 
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule ^(.*)$ $1.html
 </IfModule>
 
 ErrorDocument 404 https://www.redbridgeco.com/404
 
 
 <IfModule mod_headers.c>
-Header set Strict-Transport-Security "max-age=31536000; preload" env=HTTPS
+    Header set Content-Security-Policy: "default-src 'self'; font-src https://fonts.gstatic.com; style-src 'self' https://fonts.googleapis.com; script-src 'self'; frame-src 'self'; child-src 'none';
 
-Header set X-Frame-Options: DENY
+    # Set HSTS header conditionally if request is over HTTPS only (based on HSTS env var)
+    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HSTS
 
-Header set X-Content-Type-Options: nosniff
+    Header set X-Frame-Options: DENY
+
+    Header set X-Content-Type-Options: nosniff
+
+    Header set Referrer-Policy: strict-origin-when-cross-origin
 </IfModule>

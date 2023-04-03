@@ -140,11 +140,6 @@ header {
     letter-spacing: 2px;
 }
 
-@media only screen and (max-width: 1199px) {
-    #nav ul li {
-        padding-right: 30px;
-    }
-}
 
 @media only screen and (max-width: 991px) {
     header {

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <!-- Preload -->
     <link rel="preload" href="Images/shanghai-skyline-banner.webp" as="image"> 
+    <link rel="preload" as="script" href="components/header.js">
     <!-- CSS and Fonts -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/headerFooter.css">
@@ -34,54 +35,17 @@
     <meta property="og:locale" content="en_US"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://redbridgeco.com"/>
-    <!-- CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src https://fonts.gstatic.com; style-src 'self' https://fonts.googleapis.com; script-src 'self'; frame-src 'self'; child-src 'none';" />
     <!-- Title -->
     <title>Home - Red Bridge Co.</title>
     <!-- Scripts -->
+    <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
-    <script src="scripts/toggleNav.js" type="text/javascript" defer></script>
     <script src="scripts/animation.js" type="text/javascript" defer></script>
     <script src="scripts/sendProduct.js" type="text/javascript" defer></script>
+    <script src="scripts/token.js" type="text/javascript" defer></script>
 </head>
 <body>
-    <header>
-        <div class="header-inner">
-            <div class="logo">
-                <a href="/"><img src="Images/RedBridge co. Logo.png" alt="Red Bridge Co. logo"></a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="services">SERVICES</a></li>
-                    <li><a href="about">ABOUT</a></li>
-                    <li><a href="contact">CONTACT</a></li>
-                    <li><a href="blog">BLOG</a></li>
-                    <li><a href="faq">FAQ</a></li>
-                </ul>
-            </nav>
-            <div class="header-images">
-                <a href="https://www.facebook.com/Red-Bridge-Co-103356892190448/?ref=pages_you_manage" aria-label="Facebook"><img src="Images/facebook.svg" alt="facebook logo"></a>
-                <a href="https://www.instagram.com/red_bridge_co/?hl=en" aria-label="Instagram"><img src="Images/instagram.svg" alt="instagram logo"></a>
-                <a href="https://www.linkedin.com/in/evhan-blasingame-28b460227/" aria-label="LinkedIn"><img src="Images/linkedin.svg" alt="linkedin logo"></a>
-            </div>
-        </div>
-        <div class="btn-toggle-nav" id="toggle-nav">
-            <img src="Images/hamburger-sidebar.svg" alt="hamburger icon">
-        </div>
-        <aside>
-            <nav class="nav-sidebar">
-                <ul>
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="services">SERVICES</a></li>
-                    <li><a href="about">ABOUT</a></li>
-                    <li><a href="contact">CONTACT</a></li>
-                    <li><a href="blog">BLOG</a></li>
-                    <li><a href="faq">FAQ</a></li> 
-                </ul>
-            </nav>
-        </aside>
-    </header>
+    <header-component></header-component>
     <main>
         <section class="banner">
             <img src="Images/shanghai-skyline-banner.webp" id="hpb-img" alt="Shanghai skyline">
@@ -211,6 +175,7 @@
                     placeholder="joe@apple.com"/>
                     <label for="message" class="message">Message</label>
                     <textarea name="message" id="message"></textarea>
+                    <input class="token" type="hidden" name="token" value="">
                     <button name="submit" type="submit" id="send-form">THANK YOU</button>
                 </form>
             </section>

@@ -1,6 +1,6 @@
 <?php 
 
-if(isset($_POST['submit'])) {
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $form_body = $choice = "Product selected: ".nl2br($_POST['choice'])."\n";
 
     $form_body .= $question_1 = "Are you currently buying from China? ".nl2br($_POST['question-1'])."\n";
@@ -18,6 +18,7 @@ if(isset($_POST['submit'])) {
     $phone = $_POST['phone'];
     $email = $_POST['email'];
     $message = $_POST['message'];
+    $token = $_POST['token'];
 
     if (!empty($_POST['choice'])){
         $name = htmlspecialchars($_POST['choice']);
@@ -49,6 +50,10 @@ if(isset($_POST['submit'])) {
         $message2 = htmlspecialchars($_POST['message']);
     }
 
+    if (empty($_POST['token'])) {
+        die('No token');
+    }
+
     $mail_to = "evhanb@gmail.com";
     $header = "Red Bridge Lead";
     $mail_from = "You have received an email from: "."\n".$name."\n".$company_name."\n".$phone."\n".$email."\n".$message;
@@ -56,4 +61,3 @@ if(isset($_POST['submit'])) {
     mail($mail_to, $header,  $mail_from, $form_body);
     header("Location: thank-you.html?mailsent");
 }
-?>

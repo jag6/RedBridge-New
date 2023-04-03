@@ -4,7 +4,7 @@ class Header extends HTMLElement {
             <header>
                 <div class="header-inner">
                     <div class="logo">
-                        <a href="/"><img src="/Images/RedBridge co. Logo.png" alt="Red Bridge Co. logo"></a>
+                        <a href="/"><img src="/Images/redbridge-co-logo.png" alt="Red Bridge Co. logo"></a>
                     </div>
                     <nav id="nav">
                         <ul>
@@ -12,7 +12,6 @@ class Header extends HTMLElement {
                             <li><a href="/services">SERVICES</a></li>
                             <li><a href="/about">ABOUT</a></li>
                             <li><a href="/contact">CONTACT</a></li>
-                            <li><a href="/blog">BLOG</a></li>
                             <li><a href="/faq">FAQ</a></li>
                         </ul>
                     </nav>
@@ -32,7 +31,6 @@ class Header extends HTMLElement {
                             <li><a href="/services">SERVICES</a></li>
                             <li><a href="/about">ABOUT</a></li>
                             <li><a href="/contact">CONTACT</a></li>
-                            <li><a href="/blog">BLOG</a></li>
                             <li><a href="/faq">FAQ</a></li> 
                         </ul>
                     </nav>

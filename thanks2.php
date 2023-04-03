@@ -28,6 +28,10 @@ if(isset($_POST['submit'])) {
         $message2 = htmlspecialchars($_POST['message2']);
     }
 
+    if(empty($_POST['token'])) {
+        die('No token');
+    }
+
     $mail_to = "evhanb@gmail.com";
     $header = "Red Bridge Lead";
     $mail_from = "You have received an email from: "."\n".$name."\n".$phone."\n".$email."\n".$message;
@@ -35,4 +39,3 @@ if(isset($_POST['submit'])) {
     mail($mail_to, $header,  $mail_from);
     header("Location: thank-you.html?mailsent");
 }
-?>
