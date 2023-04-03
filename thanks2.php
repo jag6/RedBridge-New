@@ -1,10 +1,11 @@
 <?php 
 
-if(isset($_POST['submit'])) {
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name = $_POST['name'];
     $phone = $_POST['phone'];
     $email = $_POST['email'];
     $message = $_POST['message2'];
+    $token = $_POST['token'];
 
     if (!empty($_POST['name'])){
         $name = htmlspecialchars($_POST['name']);
@@ -28,7 +29,7 @@ if(isset($_POST['submit'])) {
         $message2 = htmlspecialchars($_POST['message2']);
     }
 
-    if(empty($_POST['token'])) {
+    if (empty($_POST['token'])) {
         die('No token');
     }
 
@@ -37,5 +38,5 @@ if(isset($_POST['submit'])) {
     $mail_from = "You have received an email from: "."\n".$name."\n".$phone."\n".$email."\n".$message;
 
     mail($mail_to, $header,  $mail_from);
-    header("Location: thank-you.html?mailsent");
+    header("Location: thank-you.html?mailsent&token=" . $token);
 }
