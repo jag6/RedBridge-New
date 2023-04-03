@@ -1,3 +1,3 @@
 const uuid = self.crypto.randomUUID();
-
-document.querySelector('.token').value = uuid;
+const token = document.querySelectorAll('.token');
+token.forEach((input) => input.value = uuid);
