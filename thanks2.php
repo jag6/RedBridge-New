@@ -38,5 +38,5 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $mail_from = "You have received an email from: "."\n".$name."\n".$phone."\n".$email."\n".$message;
 
     mail($mail_to, $header,  $mail_from);
-    header("Location: thank-you.html?mailsent&token=" . $token);
+    header("Location: thank-you.html?mailsent&=" . $token);
 }
