@@ -9,13 +9,7 @@ customElements.define('header-component', class extends HTMLElement {
                         <a href="/"><img src="/Images/redbridge-co-logo.png" alt="Red Bridge Co. logo"></a>
                     </div>
                     <nav id="nav">
-                        <ul>
-                            <li><a href="/">HOME</a></li>
-                            <li><a href="/services">SERVICES</a></li>
-                            <li><a href="/about">ABOUT</a></li>
-                            <li><a href="/contact">CONTACT</a></li>
-                            <li><a href="/faq">FAQ</a></li>
-                        </ul>
+                        <nav-component></nav-component>
                     </nav>
                     <div class="header-images">
                         <a href="https://www.facebook.com/Red-Bridge-Co-103356892190448/?ref=pages_you_manage" aria-label="Facebook"><img src="Images/facebook.svg" alt="facebook logo"></a>
@@ -28,13 +22,7 @@ customElements.define('header-component', class extends HTMLElement {
                 </div>
                 <aside>
                     <nav class="nav-sidebar">
-                        <ul>
-                            <li><a href="/">HOME</a></li>
-                            <li><a href="/services">SERVICES</a></li>
-                            <li><a href="/about">ABOUT</a></li>
-                            <li><a href="/contact">CONTACT</a></li>
-                            <li><a href="/faq">FAQ</a></li> 
-                        </ul>
+                        <nav-component></nav-component>
                     </nav>
                 </aside>
             </header>
@@ -67,5 +55,21 @@ customElements.define('header-component', class extends HTMLElement {
             }
         });
         let toggleNavStatusOther = false;
+    }
+});
+
+customElements.define('nav-component', class extends HTMLElement {
+    constructor() {
+        super();
+
+        this.innerHTML = `
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/services.html">SERVICES</a></li>
+                <li><a href="/about.html">ABOUT</a></li>
+                <li><a href="/contact.html">CONTACT</a></li>
+                <li><a href="/faq.html">FAQ</a></li> 
+            </ul>
+        `;
     }
 });
