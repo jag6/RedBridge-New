@@ -8,7 +8,7 @@
 .services-block { display: flex; flex-direction: row; align-items: center; margin: 0 auto; padding: 6rem 0; }
 
 .services-text { display: flex; flex-direction: column; padding: 0 5%; }
-.services-text h2 { color: #CD071E; margin-bottom: 1rem; }
+.services-text h2 { color: #CD071E; margin-bottom: 1rem; text-align: left; }
 .services-text h3 { font-size: 24px; line-height: 48px; font-weight: 700; margin-bottom: 2rem; }
 .services-text, .services-img { width: 50%; }
 
