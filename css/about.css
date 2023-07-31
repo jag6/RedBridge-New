@@ -1,75 +1,31 @@
 /*ABOUT*/
 
-#a-bt {
-    top: 12rem;
-    padding-left: 40%;
+#a-bt { top: 12rem; padding-left: 40%; }
+@media only screen and (min-width: 1441px) { 
+    #a-bt { top: 6rem; } 
 }
 
-@media only screen and (min-width: 1441px) {
-    #a-bt {
-        top: 6rem;
-    }
+.about-text-top, .about-text-bottom { 
+    display: flex; flex-direction: column; 
+    margin: 0 auto; justify-content: center; 
+    padding: 6rem 10%; 
 }
+.about-text-top p { font-size: 32px; line-height: 64px; font-weight: 700; }
+.about-text-bottom { background-color: #D9071F; color: #fff; }
+.about-text-bottom p { font-size: 48px; line-height: 72px; text-align: center; font-weight: 700; }
 
-.about-text-top, .about-text-bottom {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    justify-content: center;
-    padding: 6rem 10%;
+
+@media only screen and (max-width: 1199px) {
+        #a-bt { padding-left: 30%; } 
 }
-
-.about-text-top p {
-    font-size: 32px;
-    line-height: 64px;
-    font-weight: 700;
+@media only screen and (max-width: 991px) {    
+    #a-bt { padding-left: 0%; } 
 }
-
-.about-text-bottom {
-    background-color: #D9071F;
-    color: #fff;
+@media only screen and (max-width: 767px) { 
+    .about-text-top p { font-size: 24px; line-height: 48px; }
+    .about-text-bottom p { font-size: 32px; line-height: 64px; } 
 }
-
-.about-text-bottom p {
-    font-size: 48px;
-    line-height: 72px;
-    text-align: center;
-    font-weight: 700;
-}
-
-
-
-@media only screen and (max-width: 1199px) {   
-    #a-bt {
-        padding-left: 30%;
-    }
-}
-
-
-@media only screen and (max-width: 991px) {   
-    #a-bt {
-        padding-left: 0%;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .about-text-top p {
-        font-size: 24px;
-        line-height: 48px;
-    }
-
-    .about-text-bottom p {
-        font-size: 32px;
-        line-height: 64px;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    #a-bt {
-        top: 8rem;   
-    }
-
-    .about-text-top, .about-text-bottom {
-        padding: 6rem 5%;
-    }
+@media only screen and (max-width: 576px) { 
+    #a-bt { top: 8rem; }
+    .about-text-top, .about-text-bottom { padding: 6rem 5%; } 
 }

@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadata First -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Contact - Red Bridge Co.</title>
     <!-- Preload -->
     <link rel="preload" href="Images/computer-banner.webp" as="image"> 
     <link rel="preload" href="Images/computer2-banner.webp" as="image"> 
     <link rel="preload" as="script" href="components/header.js">
+    <link rel="preload" as="script" href="components/contactForm.js">
     <!-- CSS and Fonts -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/headerFooter.css">
     <link rel="stylesheet" href="css/homeContact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -20,8 +27,6 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://redbridgeco.com/contact">
     <!-- Metadata -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no" />
     <meta name="description" content="Contact us today for a free consultation and product quote!">
     <!-- Twitter Metadata -->
@@ -36,12 +41,10 @@
     <meta property="og:locale" content="en_US"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://redbridgeco.com/contact"/>
-    <!-- Title -->
-    <title>Contact - Red Bridge Co.</title>
-    <!-- Scripts -->
+    <!-- Components -->
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
-    <script src="scripts/token.js" type="text/javascript" defer></script>
+    <script src="components/contactForm.js" type="text/javascript" defer></script>
 </head>
 <body>
     <header-component></header-component>
@@ -53,49 +56,7 @@
                 <h1>Let's<br>Connect</h1>
             </section>
         </section>
-        <section class="contact">
-            <section class="contact-header">
-                <section class="ch-header">
-                    <h2>LET'S GET STARTED</h2>
-                </section>
-                <div class="ch-img">
-                    <img src="Images/pencil.svg" alt="pencil">
-                </div>
-            </section>
-            <section class="contact-body">
-                <div class="contact-info">
-                    <div class="ci-1">
-                        <img id="phone" src="Images/phone.svg" alt="phone">
-                        <a href="tel:+18057045505">805-704-5505</a>
-                    </div>
-                    <div class="ci-2">
-                        <img id="email" src="Images/email.png" alt="email">
-                        <a href="mailto:info@redbridgeco.com">info@redbridgeco.com</a>
-                    </div>
-                    <div class="s-media">
-                        <a href="https://www.facebook.com/Red-Bridge-Co-103356892190448/?ref=pages_you_manage" aria-label="Facebook"><img src="Images/facebook.svg" alt="facebook logo"></a>
-                        <a href="https://www.instagram.com/red_bridge_co/?hl=en" aria-label="Instagram"><img src="Images/instagram.svg" alt="instagram logo"></a>
-                        <a href="https://www.linkedin.com/in/evhan-blasingame-28b460227/" aria-label="LinkedIn"><img src="Images/linkedin.svg" alt="linkedin logo"></a>
-                    </div>
-                    <h2>Contact us today for a free consultation and product quote!</h2>
-                </div>
-                <div class="contact-form">
-                    <form action="thanks2.php" method="post" id="contact-form-pg"> 
-                        <label for="name">Name</label>
-                        <input type="text" name="name" placeholder="Joe Dohn" required maxlength="24"/>
-                        <label for="phone">Phone</label>
-                        <input type="tel" name="phone" placeholder="888-888-8888" required maxlength="12"/>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" size="20" maxLength="24" required
-                        placeholder="joe@apple.com" />
-                        <label for="message2" class="message">Message</label>
-                        <textarea name="message2" id="message2"></textarea>
-                        <input class="token" type="hidden" name="token" value="">
-                        <button name="submit" type="submit" id="send-form3" class="submit-btn">THANK YOU</button>
-                    </form> 
-                </div>
-            </section>   
-        </section>
+        <contact-component contactPitch="Contact us today for a free consultation and product quote!"></contact-component> 
     </main>
     <footer-component></footer-component>
 </body>

@@ -1,5 +1,7 @@
-class Header extends HTMLElement {
-    connectedCallback() {
+customElements.define('header-component', class extends HTMLElement {
+    constructor() {
+        super();
+
         this.innerHTML = `
             <header>
                 <div class="header-inner">
@@ -37,35 +39,33 @@ class Header extends HTMLElement {
                 </aside>
             </header>
         `;
-
-        //toggle mobile menu
-        let toggleNavStatus = false;
-        let getSidebar = document.querySelector(".nav-sidebar");
-        let getSidebarUl = document.querySelector(".nav-sidebar ul");
-        let getSidebarA = document.querySelectorAll(".nav-sidebar a");
-
-        document.getElementById('toggle-nav').addEventListener('click', () => {
-            if (toggleNavStatus === false) {
-                getSidebar.style.visibility = "visible";
-                getSidebarUl.style.visibility = "visible";
-                let arrayLength = getSidebarA.length;
-                for (var i = 0; i < arrayLength; i++) {
-                    getSidebarA[i].style.opacity = "1";
-                }
-                toggleNavStatus = true;
-            }
-            else if (toggleNavStatus === true) {
-                getSidebar.style.visibility = "hidden";
-                getSidebarUl.style.visibility = "hidden";
-                let arrayLength = getSidebarA.length;
-                for (var i = 0; i < arrayLength; i++) {
-                    getSidebarA[i].style.opacity = "0";
-                }
-                toggleNavStatus = false;
-            }
-        });
-        let toggleNavStatusOther = false;
     }
-}
+});
 
-customElements.define('header-component', Header);
+//toggle mobile menu
+let toggleNavStatus = false;
+let getSidebar = document.querySelector(".nav-sidebar");
+let getSidebarUl = document.querySelector(".nav-sidebar ul");
+let getSidebarA = document.querySelectorAll(".nav-sidebar a");
+
+document.getElementById('toggle-nav').addEventListener('click', () => {
+    if (toggleNavStatus === false) {
+        getSidebar.style.visibility = "visible";
+        getSidebarUl.style.visibility = "visible";
+        let arrayLength = getSidebarA.length;
+        for (var i = 0; i < arrayLength; i++) {
+            getSidebarA[i].style.opacity = "1";
+        }
+        toggleNavStatus = true;
+    }
+    else if (toggleNavStatus === true) {
+        getSidebar.style.visibility = "hidden";
+        getSidebarUl.style.visibility = "hidden";
+        let arrayLength = getSidebarA.length;
+        for (var i = 0; i < arrayLength; i++) {
+            getSidebarA[i].style.opacity = "0";
+        }
+        toggleNavStatus = false;
+    }
+});
+let toggleNavStatusOther = false;
