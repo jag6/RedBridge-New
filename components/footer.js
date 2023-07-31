@@ -1,5 +1,7 @@
-class Footer extends HTMLElement {
-    connectedCallback() {
+customElements.define('footer-component', class extends HTMLElement {
+    constructor() {
+        super();
+
         this.innerHTML = `
             <div class="top-button">
                 <button id="topBtn" title="Go to top">
@@ -21,9 +23,7 @@ class Footer extends HTMLElement {
         `;
         
         //top button
-        if(!document.querySelector('#topBtn')) {
-            console.log('no top button');
-        }else {
+        if(document.querySelector('#topBtn')) {
             const topBtn = document.getElementById('topBtn');
 
             window.addEventListener('scroll', () => {
@@ -33,7 +33,7 @@ class Footer extends HTMLElement {
                     topBtn.style.display = "none";
                 }
             });
-    
+
             topBtn.addEventListener('click', () => {
                 document.body.scrollTop = 0; // For Safari
                 document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -49,6 +49,4 @@ class Footer extends HTMLElement {
             });
         }
     }
-}
-
-customElements.define('footer-component', Footer);
+});
