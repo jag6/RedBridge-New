@@ -65,10 +65,10 @@ customElements.define('nav-component', class extends HTMLElement {
         this.innerHTML = `
             <ul>
                 <li><a href="/">HOME</a></li>
-                <li><a href="/services.html">SERVICES</a></li>
-                <li><a href="/about.html">ABOUT</a></li>
-                <li><a href="/contact.html">CONTACT</a></li>
-                <li><a href="/faq.html">FAQ</a></li> 
+                <li><a href="/services">SERVICES</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+                <li><a href="/faq">FAQ</a></li> 
             </ul>
         `;
     }
