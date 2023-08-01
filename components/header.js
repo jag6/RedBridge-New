@@ -6,7 +6,7 @@ customElements.define('header-component', class extends HTMLElement {
             <header>
                 <div class="header-inner">
                     <div class="logo">
-                        <a href="/"><img src="/Images/redbridge-co-logo.png" alt="Red Bridge Co. logo"></a>
+                        <a href="/"><img src="Images/redbridge-co-logo.png" alt="Red Bridge Co. logo"></a>
                     </div>
                     <nav id="nav">
                         <nav-component></nav-component>
@@ -18,7 +18,7 @@ customElements.define('header-component', class extends HTMLElement {
                     </div>
                 </div>
                 <div class="btn-toggle-nav" id="toggle-nav">
-                    <img src="/Images/hamburger-sidebar.svg" alt="hamburger icon">
+                    <img src="Images/hamburger-sidebar.svg" alt="hamburger icon">
                 </div>
                 <aside>
                     <nav class="nav-sidebar">
