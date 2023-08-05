@@ -1,3 +1,19 @@
+customElements.define('nav-component', class extends HTMLElement {
+    constructor() {
+        super();
+
+        this.innerHTML = `
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/services">SERVICES</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+                <li><a href="/faq">FAQ</a></li> 
+            </ul>
+        `;
+    }
+});
+
 customElements.define('header-component', class extends HTMLElement {
     constructor() {
         super();
@@ -55,21 +71,5 @@ customElements.define('header-component', class extends HTMLElement {
             }
         });
         let toggleNavStatusOther = false;
-    }
-});
-
-customElements.define('nav-component', class extends HTMLElement {
-    constructor() {
-        super();
-
-        this.innerHTML = `
-            <ul>
-                <li><a href="/">HOME</a></li>
-                <li><a href="/services">SERVICES</a></li>
-                <li><a href="/about">ABOUT</a></li>
-                <li><a href="/contact">CONTACT</a></li>
-                <li><a href="/faq">FAQ</a></li> 
-            </ul>
-        `;
     }
 });
