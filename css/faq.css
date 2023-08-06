@@ -55,6 +55,7 @@
     font-size: 96px; font-weight: 700; line-height: 120px; 
     margin-bottom: 7rem; 
     text-shadow: 4px 4px 8px #ccc; 
+    text-align: left;
 }
 .faq-questions-body { padding: 0 15%; padding-top: 7rem; padding-bottom: 5rem; }
 .faq-questions { margin-bottom: 6rem; }
