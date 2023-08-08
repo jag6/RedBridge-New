@@ -410,7 +410,7 @@ footer p { font-size: 20px; line-height: 32px; }
 .services-text, .services-img { width: 50%; }
 
 .services-img { display: flex; margin: 0 auto; justify-content: center; }
-.services-img img { width: 544px; height: 544px; }
+.services-img img { width: 100%; max-width: 544px; height: auto; }
 
 #services section:nth-child(3), #services section:nth-child(5) { background-color: #e6e6e6; flex-direction: row-reverse; }
 
@@ -424,7 +424,7 @@ footer p { font-size: 20px; line-height: 32px; }
     .services-text, .services-img { width: 100%; }
     .services-text { padding: 0 10%; margin-bottom: 4rem; }
 
-    .services-img img { width: 80%; height: 80%; } 
+    .services-img img { max-width: 100%; height: auto; } 
 }
 @media only screen and (orientation: landscape) and (max-width: 991px) { 
     #s-bt { top: 10rem; padding-left: 2%; } 
@@ -432,7 +432,6 @@ footer p { font-size: 20px; line-height: 32px; }
 @media only screen and (max-width: 576px) { 
     #s-bt { top: 8rem; padding-left: 0%; padding: 0 5%; }
     .services-text { padding: 0 5%; margin-bottom: 4rem; }    
-    .services-img img { width:  0%; height: 90%; } 
 }
 
 
