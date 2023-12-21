@@ -28,14 +28,14 @@ customElements.define('header-component', class extends HTMLElement {
                         <nav-component></nav-component>
                     </nav>
                     <div class="header-images">
-                        <a href="https://www.facebook.com/Red-Bridge-Co-103356892190448/?ref=pages_you_manage" aria-label="Facebook"><img src="Images/facebook.svg" alt="facebook logo"></a>
-                        <a href="https://www.instagram.com/red_bridge_co/?hl=en" aria-label="Instagram"><img src="Images/instagram.svg" alt="instagram logo"></a>
-                        <a href="https://www.linkedin.com/in/evhan-blasingame-28b460227/" aria-label="LinkedIn"><img src="Images/linkedin.svg" alt="linkedin logo"></a>
+                        <a href="https://www.facebook.com/Red-Bridge-Co-103356892190448/?ref=pages_you_manage" aria-label="Facebook link"><img src="Images/facebook.svg" alt="facebook logo"></a>
+                        <a href="https://www.instagram.com/red_bridge_co/?hl=en" aria-label="Instagram link"><img src="Images/instagram.svg" alt="instagram logo"></a>
+                        <a href="https://www.linkedin.com/in/evhan-blasingame-28b460227/" aria-label="LinkedIn link"><img src="Images/linkedin.svg" alt="linkedin logo"></a>
                     </div>
                 </div>
-                <div class="btn-toggle-nav" id="toggle-nav">
+                <button class="btn-toggle-nav" id="toggle-nav" aria-label="Open Nav Menu" aria-expanded="false">
                     <img src="Images/hamburger-sidebar.svg" alt="hamburger icon">
-                </div>
+                </button>
                 <aside>
                     <nav class="nav-sidebar">
                         <nav-component></nav-component>
@@ -46,26 +46,31 @@ customElements.define('header-component', class extends HTMLElement {
 
         //toggle mobile menu
         let toggleNavStatus = false;
-        let getSidebar = document.querySelector(".nav-sidebar");
-        let getSidebarUl = document.querySelector(".nav-sidebar ul");
-        let getSidebarA = document.querySelectorAll(".nav-sidebar a");
+        const toggleNav = document.querySelector("#toggle-nav");
+        let sidebar = document.querySelector(".nav-sidebar");
+        let sidebarUl = document.querySelector(".nav-sidebar ul");
+        let sidebarA = document.querySelectorAll(".nav-sidebar a");
 
         document.getElementById('toggle-nav').addEventListener('click', () => {
             if (toggleNavStatus === false) {
-                getSidebar.style.visibility = "visible";
-                getSidebarUl.style.visibility = "visible";
-                let arrayLength = getSidebarA.length;
+                toggleNav.ariaLabel = "Close Nav Bar";
+                toggleNav.ariaExpanded = "true";
+                sidebar.style.visibility = "visible";
+                sidebarUl.style.visibility = "visible";
+                let arrayLength = sidebarA.length;
                 for (var i = 0; i < arrayLength; i++) {
-                    getSidebarA[i].style.opacity = "1";
+                    sidebarA[i].style.opacity = "1";
                 }
                 toggleNavStatus = true;
             }
             else if (toggleNavStatus === true) {
-                getSidebar.style.visibility = "hidden";
-                getSidebarUl.style.visibility = "hidden";
-                let arrayLength = getSidebarA.length;
+                toggleNav.ariaLabel = "Open Nav Bar";
+                toggleNav.ariaExpanded = "false";
+                sidebar.style.visibility = "hidden";
+                sidebarUl.style.visibility = "hidden";
+                let arrayLength = sidebarA.length;
                 for (var i = 0; i < arrayLength; i++) {
-                    getSidebarA[i].style.opacity = "0";
+                    sidebarA[i].style.opacity = "0";
                 }
                 toggleNavStatus = false;
             }

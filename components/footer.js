@@ -3,11 +3,9 @@ customElements.define('footer-component', class extends HTMLElement {
         super();
 
         this.innerHTML = `
-            <div class="top-button">
-                <button id="topBtn" title="Go to top">
-                    <img src="Images/upBtn.svg" alt="up arrow">
-                </button>
-            </div>
+            <button id="topBtn" class="top-btn" title="Go to top" aria-label="Go Back to Top Button" aria-hidden="true">
+                <img src="Images/upBtn.svg" alt="up arrow">
+            </button>
             <footer>
                 <div class="footer-left">
                     <div><img src="Images/RedBridge Submark 1.png" alt="Red Bridge Co. logo 2"></div>
@@ -28,8 +26,10 @@ customElements.define('footer-component', class extends HTMLElement {
 
             window.addEventListener('scroll', () => {
                 if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    topBtn.ariaHidden = "false";
                     topBtn.style.display = "block";
                 }else {
+                    topBtn.ariaHidden = "true";
                     topBtn.style.display = "none";
                 }
             });
