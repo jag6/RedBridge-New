@@ -9,7 +9,7 @@ customElements.define('footer-component', class extends HTMLElement {
             <footer>
                 <div class="footer-left">
                     <div><img src="Images/RedBridge Submark 1.png" alt="Red Bridge Co. logo 2"></div>
-                    <p>Red Bridge Co.&copy; 2022-2023</p>
+                    <p>Red Bridge Co.&copy; 2022-2024</p>
                 </div>
                 <div class="pp"><a href="/privacy-policy">Privacy Policy</a></div>
                 <div class="footer-images">
