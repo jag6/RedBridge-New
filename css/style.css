@@ -140,14 +140,14 @@ header {
 
 .btn-toggle-nav, aside { display: none; }
 .btn-toggle-nav {
-    margin: 0 auto;
+    margin: 0 auto; padding: 0;
     right: 0;
     cursor: pointer;
     position: absolute;
     background-color: transparent;
     width: 64px; height: 64px;
 }
-.btn-toggle-nav img { width: 64px; height: 64px; padding-right: 8px; }
+.btn-toggle-nav img { width: 64px; height: 64px; }
 
 .nav-sidebar {
     right: 0; top: 64px;
