@@ -144,9 +144,10 @@ header {
     right: 0;
     cursor: pointer;
     position: absolute;
+    background-color: transparent;
     width: 64px; height: 64px;
 }
-.btn-toggle-nav img { width: 64px; height: 64px; }
+.btn-toggle-nav img { width: 64px; height: 64px; padding-right: 8px; }
 
 .nav-sidebar {
     right: 0; top: 64px;
