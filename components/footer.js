@@ -3,7 +3,7 @@ customElements.define('footer-component', class extends HTMLElement {
         super();
 
         this.innerHTML = `
-            <button id="topBtn" class="top-btn" title="Go to top" aria-label="Go Back to Top Button" aria-hidden="true">
+            <button id="topBtn" class="top-btn" title="Go to top" aria-label="Go Back to Top Button" aria-hidden="true" type="button">
                 <img src="Images/upBtn.svg" alt="up arrow">
             </button>
             <footer>

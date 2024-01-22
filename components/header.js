@@ -33,7 +33,7 @@ customElements.define('header-component', class extends HTMLElement {
                         <a href="https://www.linkedin.com/in/evhan-blasingame-28b460227/" aria-label="LinkedIn link"><img src="Images/linkedin.svg" alt="linkedin logo"></a>
                     </div>
                 </div>
-                <button class="btn-toggle-nav" id="toggle-nav" aria-label="Open Nav Menu" aria-expanded="false">
+                <button class="btn-toggle-nav" id="toggle-nav" aria-label="Open Nav Menu" aria-expanded="false" type="button">
                     <img src="Images/hamburger-sidebar.svg" alt="hamburger icon">
                 </button>
                 <aside>
