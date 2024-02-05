@@ -26,7 +26,7 @@ customElements.define('contact-component', class extends HTMLElement {
                         </div>
                         <div class="ci-2">
                             <img id="email" src="Images/email.png" alt="email">
-                            <a href="mailto:info@redbridgeco.com">info@redbridgeco.com</a>
+                            <a href="mailto:info&commat;redbridgeco&period;com">info&commat;redbridgeco&period;com</a>
                         </div>
                         <div class="s-media">
                             <a href="https://www.facebook.com/Red-Bridge-Co-103356892190448/?ref=pages_you_manage" aria-label="Facebook"><img src="Images/facebook.svg" alt="facebook logo"></a>
@@ -60,7 +60,7 @@ customElements.define('contact-component', class extends HTMLElement {
                         </div>
                         <div class="ci-2">
                             <img id="email" src="Images/email.png" alt="email">
-                            <a href="mailto:info@redbridgeco.com">info@redbridgeco.com</a>
+                            <a href="mailto:info&commat;redbridgeco&period;com">info&commat;redbridgeco&period;com</a>
                         </div>
                         <div class="s-media">
                             <a href="https://www.facebook.com/Red-Bridge-Co-103356892190448/?ref=pages_you_manage" aria-label="Facebook"><img src="Images/facebook.svg" alt="facebook logo"></a>
